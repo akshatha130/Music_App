@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Cast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="app.js" defer></script>
+    <header>
+        <button id="openBtn">☰</button>
+        <div class="logo"><img src="Logos/Main_Logo.png" alt="Vibe Cast Logo"></div>
+        <nav class="nav">
+            <a href="">Home</a>
+            <a href="">All Songs</a>
+            <a href="">My Playlist</a>
+            <div class="search-container">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input type="text" class="search-box" placeholder="Search...">
+            </div>
+            <button onclick="window.location.href='signup.html'" class="auth-buttons">Sign Up</button>
+            <button onclick="window.location.href='login.html'" class="auth-buttons">Login</button>
+        </nav>
+    </header>
+
+    <div class="main">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Your Library</h2>
+                <button id="close-playlist">✖</button>
+            </div>
+            <div class="playlist">
+                <button class="create-btn">Create playlist</button>
+                <ul>
+                    <li>Chill Vibes</li>
+                    <li>Workout Mix</li>
+                    <li>Study Beats</li>
+                    <li>Classics</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item prev-prev">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMW4V9pwRzqkEgzfoyfTDDBJdoWS-5wB5bQ&s" alt="K-pop">
+                            <div class="carousel-content">
+                                <div class="carousel-title">K-pop</div>
+                                <div class="carousel-topic">Songs</div>
+                                <div class="carousel-description">
+                                    K-pop, or Korean pop, is a popular music genre and industry that originated in South Korea.
+                                </div>
+                                <button class="carousel-button">Listen Now ↗</button>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item prev">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-182776799-612x612-1668794482.jpg?crop=1.00xw:0.834xh;0,0.145xh&resize=980:*" alt="K-pop">
+                            <div class="carousel-content">
+                                <div class="carousel-title">K-pop</div>
+                                <div class="carousel-topic">Songs</div>
+                                <div class="carousel-description">
+                                    Known for its catchy hooks, polished choreography, and visually appealing performances.
+                                </div>
+                                <button class="carousel-button">Listen Now ↗</button>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/736x/0f/d7/60/0fd7608cb4261dc835136467c8ca2294.jpg" alt="K-pop">
+                            <div class="carousel-content">
+                                <div class="carousel-title">K-POP</div>
+                                <div class="carousel-topic">Songs</div>
+                                <div class="carousel-description">
+                                    Experience the vibrant world of Korean pop music with our curated selection.
+                                </div>
+                                <button class="carousel-button">Listen Now ↗</button>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item next">
+                            <img src="https://i.pinimg.com/736x/0e/89/37/0e8937e6a2aa4d547fc62d5aa218d1dd.jpg" alt="K-pop">
+                            <div class="carousel-content">
+                                <div class="carousel-title">K-pop</div>
+                                <div class="carousel-topic">Hits</div>
+                                <div class="carousel-description">
+                                    Discover the latest and greatest in the K-pop universe.
+                                </div>
+                                <button class="carousel-button">Listen Now ↗</button>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item next-next">
+                            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="K-pop">
+                            <div class="carousel-content">
+                                <div class="carousel-title">K-Pop</div>
+                                <div class="carousel-topic">Classics</div>
+                                <div class="carousel-description">
+                                    Timeless K-pop tracks that defined a generation.
+                                </div>
+                                <button class="carousel-button">Listen Now ↗</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="playlists-section">
+        <h2>Featured Playlists</h2>
+        <div class="playlist-container">
+            <div class="playlist-item">
+                <img src="https://source.unsplash.com/random/300x300/?music,cover1" alt="Playlist Cover">
+                <div class="playlist-info">
+                    <h3>Chill Vibes</h3>
+                    <p>20 songs</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://source.unsplash.com/random/300x300/?music,cover2" alt="Playlist Cover">
+                <div class="playlist-info">
+                    <h3>Workout Pump</h3>
+                    <p>15 songs</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://source.unsplash.com/random/300x300/?music,cover3" alt="Playlist Cover">
+                <div class="playlist-info">
+                    <h3>Study Beats</h3>
+                    <p>25 songs</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://source.unsplash.com/random/300x300/?music,cover4" alt="Playlist Cover">
+                <div class="playlist-info">
+                    <h3>K-Pop Hits</h3>
+                    <p>30 songs</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="https://source.unsplash.com/random/300x300/?music,cover5" alt="Playlist Cover">
+                <div class="playlist-info">
+                    <h3>Throwback Jams</h3>
+                    <p>18 songs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="artists">
+        <h2>Featured Artists</h2>
+        <div class="artist-cards">
+            <div class="artist-card">
+                <img src="artist1.jpg" alt="Artist 1">
+                <h3>Aria Nova</h3>
+            </div>
+            <div class="artist-card">
+                <img src="artist2.jpg" alt="Artist 2">
+                <h3>Rhythm Rex</h3>
+            </div>
+            <div class="artist-card">
+                <img src="artist3.jpg" alt="Artist 3">
+                <h3>DJ Solstice</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo">
+                <img src="Logos/Main_Logo.png" alt="Vibe Cast Logo">
+                <p>Feel the beat, live the vibe!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" style="color: #8e3eff;text-decoration:none;">Home</a></li>
+                    <li><a href="#" style="color: #8e3eff;text-decoration:none;">About</a></li>
+                    <li><a href="#" style="color: #8e3eff;text-decoration:none;">All Songs</a></li>
+                    <li><a href="#" style="color: #8e3eff;text-decoration:none;">My Playlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@vibecast.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
