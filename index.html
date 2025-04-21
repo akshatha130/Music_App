@@ -34,6 +34,14 @@
             </div>
             <div class="playlist">
                 <button class="create-btn">Create playlist</button>
+                <div id="loginAlert" class="alert-box">
+                    <p><strong>Create a playlist</strong><br>Log in to create and share playlists.</p>
+                    <div class="alert-buttons">
+                      <button onclick="document.getElementById('loginAlert').style.display='none'">Not now</button>
+                      <a href="login.php"><button>Log in</button></a>
+                    </div>
+                </div>
+                
                 <ul>
                     <li>Chill Vibes</li>
                     <li>Workout Mix</li>
@@ -200,5 +208,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById("createPlaylistBtn").addEventListener("click", function () {
+            // This value is rendered by PHP into JS
+            const isLoggedIn = <?php echo isset($_SESSION['user_id']) ? 'true' : 'false'; ?>;
+        
+            if (!isLoggedIn) {
+                document.getElementById("loginAlert").style.display = "block";
+            } else {
+                // proceed to open playlist form or redirect
+                window.location.href = "playlist_form.php"; // your actual form
+            }
+        });
+        </script>
 </body>
 </html>
